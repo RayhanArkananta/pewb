@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="form.css" />
+    <script src="form.js" defer></script>
+</head>
+<body>
+    <div class="nospace">
+        <img src="kampus.jpg" alt="" width="100%" height="200px" />
+        <nav>
+          <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="biodata.html">Biodata</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="form.html">Form</a></li>
+          </ul>
+        </nav>
+    </div>
+    <div class="form-container">
+        <h2>Form Pendaftaran</h2>
+        <form id="registration-form">
+            <div class="form-group">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="nim">NIM:</label>
+                <input type="text" id="nim" name="nim" required>
+            </div>
+            <div class="form-group">
+                <label for="parent-name">Nama Orang Tua:</label>
+                <input type="text" id="parent-name" name="parent-name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">No. Telepon:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="religion">Agama:</label>
+                <select id="religion" name="religion" required>
+                    <option value="">Pilih Agama</option>
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="katolik">Katolik</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="buddha">Buddha</option>
+                    <option value="konghucu">Konghucu</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="address">Alamat:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
